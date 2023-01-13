@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+
+body {
+    background-color: #c7edf8;
+    color: #0f141e;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+
+
+
+    /* font: normal 16px 'Roboto', sans-serif; */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color:grey
+}
+
+
+
+h1 {
+    font-size: 50px;
+    color: #ffb95c;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 70px;
+    box-shadow: 14px 14px 13px 0px rgba(14, 155, 14, 0.25);;
+}
+
+.info {
+    display: flex;
+}
+
+.info-text {
+    padding-left: 50px;
+}
+
+.info p {
+    color: #4c566b;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* word-spacing: 30px; */
+}
+
+/* Box model */
+.container {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.social {
+    background: #f0ff65;
+    /* padding: 15px; */
+    padding: 0px 10px 5px;
+    margin: 5px;
+    border: 10px solid #a3ff97;
+    border-style: ridge;
+    /* border-top-width: 15px; */
+    /* border-right-color: blue; */
+    max-width: 260px;
+    box-shadow: 14px 14px 13px 0px rgba(14, 155, 14, 0.25);
+}
+
+/* .box-model > div {
+    float: left;
+    background: #000;
+    height: 200px;
+    border: 4px solid red;
+    width: 25%;
+    box-sizing: border-box;
+} */
+
+.card {
+    padding: 15px 20px;
+    background-color: #94ebf1;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.bg-clolor-green {
+    background-color: #c2f3ce;
+}
+
+.bg-clolor-yellow {
+    background-color: #b2fcd9;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #4c566b;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid grey; */
+}
+
+.table {
+   width:  100%; 
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table tr:nth-child(2) > td:nth-child(2), tr:nth-child(2) > td:nth-child(3) {
+    color: #4c566b;
+}
+
+.table tr:nth-child(3) > td:nth-child(2), tr:nth-child(3) > td:nth-child(3) {
+    color: #4c566b;
+}
+
+
+
+.table tr:nth-child(1) {
+    font-weight: bold;
+    color: #000;
+}
+
+/* .table tr:nth-child(odd) {
+    background: red;
+} */
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #4c566b;
+    font-weight: 600;
+    border: 2px solid rgb(202, 255, 214);
+    border-style:none;
+    max-width: 120px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;  
+    border-bottom: 1px solid  #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 100px;
+}
+
+.btn {
+    background:#111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Position */
+
+.position {
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+}
+
+.box {
+    /*position: absolute;*/ /*позиционируется относительно
+    родительского релатив или родительского абсолют либо относительно дефолтного размера окна*/
+    position: fixed; /*позиционируется фиксированно в точке окна даже если скроллить страницу*/
+    /* top: 0px; */
+    
+    bottom: 50px;
+    right: 50px;
+    border-radius: 25%;
+    /* left: 0px; */
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+
+.box > a {
+    position: absolute;
+    left: 5px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-weight: 900;
+    color: #000;
+}
+
+@media (max-width: 700px) {
+    .info {
+        display: block;
+        /* padding-left: 0px; */
+    }
+    .info-text {
+        padding-left: 10px;
+    }
+}
